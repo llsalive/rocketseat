@@ -7,3 +7,14 @@ POST http://localhost:3333/courses
 {
 	"name": "Leo"
 }
+
+###
+
+DELETE http://localhost:3333/courses/1
+
+###
+PUT http://localhost:3333/courses/1
+
+###
+
+DELETE http://localhost:3333/courses/1
