@@ -1,0 +1,39 @@
+# Get Balance
+GET http://localhost:3333/balance
+cpf: 12345678901
+
+###
+
+# Get statement
+GET http://localhost:3333/statement
+cpf: 12345678901
+
+###
+
+# Get statement by date
+GET http://localhost:3333/statement/date
+    ?date=2021-11-01
+cpf: 12345678901
+
+###
+
+# Send deposit
+POST http://localhost:3333/deposit
+Content-Type: application/json
+cpf: 12345678901
+
+{
+  "description": "Depósito do Ignite",
+  "amount": 2500.00
+}
+
+###
+
+# Make withdraw
+POST http://localhost:3333/withdraw
+Content-Type: application/json
+cpf: 12345678901
+
+{
+  "amount": 1000.00
+}

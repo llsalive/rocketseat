@@ -1,0 +1,31 @@
+# Create account
+POST http://localhost:3333/account
+Content-Type: application/json
+
+{
+  "cpf": "12345678901",
+  "name": "João da Silva"
+}
+
+###
+
+# Get customer
+GET http://localhost:3333/account
+cpf: 12345678901
+
+###
+
+# Update name
+PUT http://localhost:3333/account
+Content-Type: application/json
+cpf: 12345678901
+
+{
+  "name": "José de Oliveira"
+}
+
+###
+ 
+# Delete account 
+DELETE http://localhost:3333/account
+cpf: 12345678901
