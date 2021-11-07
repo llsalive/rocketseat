@@ -1,0 +1,15 @@
+# LIST
+GET http://localhost:3333/categories
+
+###
+
+# CREATE
+POST http://localhost:3333/categories
+Content-Type: application/json
+
+{
+  "name": "Sedan",
+  "description": "Categoria de carro Sedan"
+}
+
+###
